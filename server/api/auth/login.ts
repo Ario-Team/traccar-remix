@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 export default defineEventHandler(async (e) => {
   const { public: publicRuntime } = useRuntimeConfig();
@@ -15,7 +15,6 @@ export default defineEventHandler(async (e) => {
       error = true;
     });
   if (error) {
-    console.dir(error);
     return "faild";
   }
   if (typeof res == "object") {

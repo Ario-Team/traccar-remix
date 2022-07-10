@@ -28,11 +28,11 @@ const login = async (e: SubmitEvent) => {
       (async () => {
         await navigateTo("/");
       })();
-    }, 1000);
+    }, 1500);
   } else if (loginStatus.value == "faild") {
     setTimeout(() => {
       loginStatus.value = "";
-    }, 6000);
+    }, 4000);
   }
 };
 </script>
@@ -78,7 +78,7 @@ const login = async (e: SubmitEvent) => {
 
 <style scoped lang="scss">
 .errorAnimation {
-  animation: errorAnimatioFrame 6s ease forwards;
+  animation: errorAnimatioFrame 4s ease forwards;
 }
 @keyframes errorAnimatioFrame {
   0% {
