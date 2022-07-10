@@ -1,42 +1,31 @@
-# Nuxt 3 Minimal Starter
+# 🚀 Traccar Remix
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<b> A fantastic alternative for the Traccar platform web app.</b>
 
-## Setup
+> This App is under development and it's not ready yet
 
-Make sure to install the dependencies:
+# 📒 Goals for v1
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+- [ ] Authentication
+  - [ ] Login
+  - [ ] Register
+- [ ] User management
+  - [ ] Edit
+  - [ ] Delete
+  - [ ] Add
+- [ ] Device Management
+  - [ ] Add
+  - [ ] Edit
+  - [ ] Delete
+- [ ] Driver Management
+  - [ ] Add
+  - [ ] Edit
+  - [ ] Delete
+- [ ] Tracking Functionalities
+  - [ ] Showing devices on the map
+  - [ ] Replay of the device
+- [ ] Admin panel
+  - [ ] User management
+  - [ ] Statics
+- [ ] Reporting Panel
+  - [ ] ...
