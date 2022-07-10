@@ -7,7 +7,7 @@
 # 📒 Goals for v1
 
 - [ ] Authentication
-  - [ ] Login
+  - [X] Login
   - [ ] Register
 - [ ] User management
   - [ ] Edit
