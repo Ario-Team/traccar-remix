@@ -1,18 +1,22 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
+  purge: [
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    // "./nuxt.config.{js,ts}",
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        "unalink-blue": "#0072BC",
-        "unalink-white": "#FFF",
-        "unalink-blue-light": "#0072BC",
-      },
       fontFamily: {
-        poppins: ["Poppins", "Arial", "sans-serif"],
-        notoSans: ["Noto Sans Arabic", "Arial", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };
