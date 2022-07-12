@@ -28,7 +28,7 @@ onMounted(() => replaceIcon());
     />
     <i
       :data-feather="
-        type == 'email' ? 'user' : type == 'password' ? 'key' : 'user'
+        type == 'text' ? 'user' : type == 'password' ? 'key' : 'mail'
       "
       class="absolute top-2 text-sm left-3 text-gray-200 peer-focus:text-blue-300 peer-hover:text-blue-300"
     ></i>
