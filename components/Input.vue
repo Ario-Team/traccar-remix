@@ -17,7 +17,7 @@ onMounted(() => replaceIcon());
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative w-full">
     <input
       :type="type"
       :placeholder="placeholder"
