@@ -63,22 +63,11 @@ const login = async (e: SubmitEvent) => {
         placeholder="Enter your password"
         @updated-value="(e) => (password.value = e)"
       />
-      <button
-        class="w-full flex justify-center items-center bg-white border-2 border-gray-200 h-12 font-bold text-gray-400 transition-colors duration-200 hover:bg-blue-500 hover:text-white hover:border-transparent"
-        :class="{
-          'bg-blue-600': isPending.value,
-          'bg-green-400': loginStatus.value == 'ok',
-          'text-white':
-            loginStatus.value == 'ok' || loginStatus.value == 'faild',
-          'bg-red-500': loginStatus.value == 'faild',
-        }"
+      <AuthButton
         :disabled="email.value == '' && password.value == ''"
-      >
-        <span v-if="loginStatus.value == 'faild'">Faild</span>
-        <Tick v-else-if="loginStatus.value == 'ok'" />
-        <span v-else-if="!isPending.value"> Login </span>
-        <Spiner v-else />
-      </button>
+        :status="loginStatus.value"
+        :isPending="isPending.value"
+      />
       <div class="w-full flex justify-center opacity-60">
         <NuxtLink
           to="/auth/register"
