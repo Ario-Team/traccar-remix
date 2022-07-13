@@ -67,6 +67,7 @@ const login = async (e: SubmitEvent) => {
         :disabled="email.value == '' && password.value == ''"
         :status="loginStatus.value"
         :isPending="isPending.value"
+        text="Login"
       />
       <div class="w-full flex justify-center opacity-60">
         <NuxtLink
