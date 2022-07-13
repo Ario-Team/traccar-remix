@@ -5,9 +5,14 @@ useHead({
 
 const router = useRouter();
 const authCookie = useCookie("JSESSIONID");
+
 if (authCookie.value != undefined) {
   await navigateTo("/");
-} else if (!router.currentRoute.value.fullPath.includes("login")) {
+}
+if (
+  !router.currentRoute.value.fullPath.includes("login") &&
+  !router.currentRoute.value.fullPath.includes("register")
+) {
   await navigateTo("/auth/login");
 }
 </script>
@@ -30,6 +35,23 @@ if (authCookie.value != undefined) {
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.auth-enter-from,
+.auth-leave-to {
+  opacity: 0;
+}
+
+.auth-enter-to {
+  opacity: 1;
+}
+
+.auth-enter-active,
+.auth-leave-active {
+  transition: 1s ease-in-out;
+  transition-property: scale, opacity;
+}
+</style>
 
 <style scoped lang="scss">
 .animation {
