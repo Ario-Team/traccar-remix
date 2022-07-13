@@ -80,6 +80,13 @@ const formSubmit = async (e: SubmitEvent) => {
         "
         text="Register"
       />
+      <div class="flex justify-center items-center w-full">
+        <NuxtLink
+          to="/auth/login"
+          class="text-gray-500 font-semibold text-sm opacity-70 transition-all duration-200 hover:text-blue-800 hover:opacity-100"
+          >Already have one?</NuxtLink
+        >
+      </div>
     </form>
   </div>
 </template>
