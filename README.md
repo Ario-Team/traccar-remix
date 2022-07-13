@@ -6,9 +6,9 @@
 
 # 📒 Goals for v1
 
-- [ ] Authentication
+- [X] Authentication
   - [X] Login
-  - [ ] Register
+  - [X] Register
 - [ ] User management
   - [ ] Edit
   - [ ] Delete
